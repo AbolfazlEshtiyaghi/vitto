@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wraper{
+    font-family: shabnam;
+}
+@font-face {
+    font-family: shabnam;
+    src: url(../font/Shabnam-Medium-FD.woff);
+}
+::-webkit-scrollbar{
+width: 6px;
+background-color: rgb(201, 200, 200);
+}
+::-webkit-scrollbar-thumb{
+    width: 8px;
+    background-color: navy;
+    border-radius: 10px;
+}
+html , body{
+    scroll-behavior: smooth;
+}

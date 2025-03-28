@@ -1,0 +1,236 @@
+@font-face {
+  font-family: shabnam;
+  src: url(../font/Shabnam-Medium-FD.woff);
+}
+.backgrounds {
+  width: 100%;
+  height: 550px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  .backslider2 {
+    width: 80%;
+    height: 600px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(213, 213, 213);
+    margin-top: 70px;
+    border-radius: 15px;
+    font-family: shabnam;
+    padding: 1px;
+    box-sizing: border-box;
+    .title {
+      width: 100%;
+      height: 5%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 800px;
+
+      h2 {
+        color: gray;
+        transition: 300ms;
+        font-size: 30px;
+        &:hover {
+          color: black;
+        }
+      }
+      a {
+        text-decoration: none;
+        color: gray;
+        transition: 300ms;
+        font-size: 16px;
+        &:hover {
+          color: black;
+        }
+        i{
+      font-size: 20px !important;
+        }
+      }
+    }
+
+    .sliderabl {
+      width: 95%;
+      height: 75%;
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        border-radius: 10px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+
+        .img {
+          width: 100%;
+          height: 271px;
+          display: flex;
+          flex-flow: row;
+          justify-content: center;
+          align-items: center;
+          border-radius: 70px;
+          margin-top: 21px;
+          img {
+            width: 100%;
+            height: 100%;
+            margin-left: 10px;
+            border-radius: 20px;
+          }
+        }
+        .img1 {
+          width: 100%;
+          height: 262px;
+          display: flex;
+          flex-flow: row;
+          justify-content: center;
+          align-items: center;
+          border-radius: 70px;
+          margin-top: 21px;
+
+          img {
+            width: 100%;
+            height: 300px;
+            border-radius: 20px;
+          }
+        }
+
+        .h6 {
+          width: 100%;
+          height: 2%;
+          background-color: white;
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          align-items: end;
+          h5 {
+            color: gray;
+            font-size: 13px;
+            margin-left: 15px;
+            text-decoration: line-through;
+          }
+        }
+      }
+      .title {
+        width: 100%;
+        height: 5%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+          color: rgb(182, 182, 182);
+          font-size: 12px;
+        }
+      }
+      .h3 {
+        width: 100%;
+        height: 8%;
+        background-color: white;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        transition: 300ms;
+        &:hover {
+          color: navy;
+        }
+        h3 {
+          font-size: 14px;
+          font-weight: 100;
+        }
+      }
+      .no {
+        width: 100%;
+        height: 15%;
+        background-color: rgb(251, 235, 235);
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        border-end-end-radius: 10px;
+        border-end-start-radius: 10px;
+        h4 {
+          font-size: 15px;
+          font-weight: 100;
+          color: rgb(92, 8, 8);
+        }
+      }
+      .mojod {
+        width: 100%;
+        height: 15%;
+        background-color: white;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: end;
+        align-items: center;
+        gap: 5px;
+        border-end-end-radius: 10px;
+        border-end-start-radius: 10px;
+        h4 {
+          font-size: 15px;
+          font-weight: 100;
+          margin-left: 10px;
+        }
+        h3 {
+          color: rgb(9, 68, 156);
+        }
+      }
+      .mojodd {
+        width: 100%;
+        height: 11%;
+        background-color: white;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: end;
+        align-items: center;
+        gap: 5px;
+        border-end-end-radius: 10px;
+        border-end-start-radius: 10px;
+        h4 {
+          font-size: 15px;
+          font-weight: 100;
+          margin-left: 10px;
+        }
+        h3 {
+          color: rgb(9, 68, 156);
+        }
+      }
+    }
+  }
+  .swiper-rtl .swiper-button-next:after {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+  .swiper-rtl .swiper-button-prev:after {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+  .swiper-button-next {
+    width: 50px !important;
+    height: 44px !important;
+  }
+  .swiper-button-prev {
+    width: 50px !important;
+    height: 44px !important;
+  }
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}

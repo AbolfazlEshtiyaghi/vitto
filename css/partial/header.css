@@ -1,0 +1,2713 @@
+.header{
+  width: 100%;
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  .header-top {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-flow: row wrap;
+    .header-top-logo {
+      width: 20%;
+      height: inherit;
+      background-color: white;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: end;
+      align-items: center;
+      .img {
+        width: 96px;
+        height: 45px;
+        margin: 10px;
+        margin-top: 15px;
+      }
+    }
+    .header-top-searchbox {
+      width: 25%;
+      height: inherit;
+      background-color: white;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      transition: 600ms;
+
+      &:hover {
+        color: navy;
+      }
+      .header-top-search {
+        width: 90%;
+        height: 45px;
+        background-color: rgb(246, 243, 243);
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        margin-left: 15px;
+        border-radius: 15px;
+        overflow: hidden;
+        label {
+          margin-bottom: 15px;
+          margin: 8px;
+          font-size: 18px;
+          font-weight: 100;
+          color: gray;
+          margin-left: 10px;
+        }
+        .input {
+          width: 90%;
+          box-shadow: 0px 0px 0px;
+          height: 40px;
+          border: none;
+          font-family: shabnam;
+          background-color: rgb(246, 243, 243);
+         
+        }
+        [for="search"]:hover {
+          color: cadetblue;
+          transition: 300ms;
+        }
+        input::placeholder{
+          font-size: 17px;
+        }
+      }
+    }
+    .header-top-text {
+      width: 30%;
+      height: inherit;
+      background-color: white;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: start;
+      align-items: center;
+      font-size: 7px;
+      font-weight: 100;
+
+      .a {
+        text-decoration: none;
+        margin: 10px;
+        color: gray;
+        transition: 300ms;
+        &:hover {
+          color: black;
+        }
+      }
+    }
+    .header-top-shopping-logo {
+      width: 7%;
+      height: inherit;
+      background-color: white;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: end;
+      align-items: center;
+
+      .logo {
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        margin-left: 5px;
+        border: 1px;
+        box-shadow: 0px 0px 3px;
+        transition: 300ms;
+        &:active {
+          transform: scale(0.7);
+        }
+      }
+      a {
+        color: rgb(255, 111, 0);
+      }
+    }
+    .header-top-login {
+      width: 18%;
+      height: inherit;
+      display: flex;
+      flex-flow: row wrap;
+      background-color: white;
+      justify-content: start;
+      align-items: center;
+      font-size: 6px;
+      padding: 1px;
+      box-sizing: border-box;
+      &:active .h-login {
+        transform: scale(0.9);
+        background-color: aliceblue;
+        color: cadetblue;
+      }
+      .h-login {
+        background-color: rgb(11, 79, 203);
+        padding: 1px;
+        border-radius: 10px;
+        margin: 10px;
+        margin-right: 10px;
+        padding: 1px;
+        text-decoration: none;
+        color: whitesmoke;
+        font-family: shabnam;
+        transition: 200ms;
+        h1 {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  .header-menu {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 80px;
+    box-shadow: 1px 0px 3px;
+    transition: 600ms;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+    &:hover {
+      color: navy;
+    }
+    .header-menu-nav-item {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 90px;
+
+      .header-menu-nav-item-link {
+        display: flex;
+        flex-flow: row wrap;
+        font-size: 15px;
+        margin: 10px;
+        padding: 10px;
+        color: rgb(97, 94, 94);
+        text-decoration: none;
+        transition: 500ms;
+        position: relative;
+        &:hover {
+          color: rgb(163, 39, 39);
+        }
+        &:hover .header-menu-nav-item-link-submenu {
+          display: block;
+        }
+        &:hover .header-menu-nav-item-link-submenu1 {
+          display: block;
+        }
+        &:hover .header-menu-nav-item-link-submenu2 {
+          display: block;
+        }
+        &:hover .header-menu-nav-item-link-submenu3 {
+          display: block;
+        }
+        &:hover .header-menu-nav-item-link-submenu4 {
+          display: block;
+        }
+        &:hover .header-menu-nav-item-link-submenu5 {
+          display: block;
+        }
+        &:hover .header-menu-nav-item-link-submenu6 {
+          display: block;
+        }
+        i {
+          margin-right: 10px;
+          margin-top: 4px;
+        }
+        .header-menu-nav-item-link-submenu {
+          width: 22vw;
+          height: 78vh;
+          background-color: white;
+          position: absolute;
+          z-index: 2;
+          top: 40px;
+          display: none;
+          .header-menu-nav-item-link-submenu-link {
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: start;
+            align-items: center;
+            transition: 300ms;
+            &:hover {
+              background-color: rgba(246, 246, 246, 0.942);
+            }
+            &:hover h2 {
+              color: rgb(30, 113, 255);
+            }
+            h2 {
+              font-size: 14px;
+              color: gray;
+              font-weight: 100;
+              margin-right: 10px;
+              transition: 300ms;
+            }
+          }
+          .header-menu-nav-item-link-submenu-link1 {
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 220px;
+            position: relative;
+            &:hover .header-menu-nav-item-link-submenu-right-menu {
+              display: block;
+            }
+            &:hover {
+              background-color: rgba(246, 246, 246, 0.942);
+            }
+            &:hover h2 {
+              color: rgb(30, 113, 255);
+            }
+            &:hover i {
+              color: rgb(30, 113, 255);
+            }
+            h2 {
+              font-size: 14px;
+              color: gray;
+              font-weight: 100;
+              transition: 300ms;
+              &:hover {
+                color: rgb(30, 109, 255);
+              }
+            }
+            i {
+              color: gray;
+              font-size: 13px;
+              transition: 300ms;
+              &:hover {
+                color: rgb(30, 109, 255);
+              }
+            }
+            .header-menu-nav-item-link-submenu-right-menu {
+              width: 350px;
+              height: 120px;
+              background-color: white;
+              position: absolute;
+              margin-right: 727px;
+              margin-top: 70px;
+              display: none;
+              transition: 300ms;
+
+              .p1 {
+                width: 1005;
+                height: 40px;
+                background-color: white;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-self: center;
+                transition: 300ms;
+                &:hover {
+                  background-color: rgba(246, 246, 246, 0.942);
+                }
+                &:hover h2 {
+                  color: rgb(30, 109, 255);
+                }
+                h2 {
+                  margin-right: 10px;
+                  color: gray;
+                }
+              }
+              .p2 {
+                width: 100%;
+                height: 40px;
+                background-color: white;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-self: center;
+                transition: 300ms;
+                &:hover {
+                  background-color: rgba(246, 246, 246, 0.942);
+                }
+                &:hover h2 {
+                  color: rgb(30, 109, 255);
+                }
+                h2 {
+                  margin-right: 10px;
+                  color: gray;
+                }
+              }
+              .p3 {
+                width: 100%;
+                height: 40px;
+                background-color: white;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-self: center;
+                transition: 300ms;
+                &:hover {
+                  background-color: rgba(246, 246, 246, 0.942);
+                }
+                &:hover h2 {
+                  color: rgb(30, 109, 255);
+                }
+                h2 {
+                  margin-right: 10px;
+                  color: gray;
+                }
+              }
+            }
+          }
+          .header-menu-nav-item-link-submenu-link2 {
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: start;
+            align-items: center;
+            transition: 300ms;
+            &:hover {
+              background-color: rgba(246, 246, 246, 0.942);
+            }
+            &:hover h2 {
+              color: rgb(30, 113, 255);
+            }
+            h2 {
+              font-size: 14px;
+              color: gray;
+              font-weight: 100;
+              margin-right: 10px;
+            }
+          }
+
+          .header-menu-nav-item-link-submenu-link3 {
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: start;
+            align-items: center;
+            transition: 300ms;
+            &:hover {
+              background-color: rgba(246, 246, 246, 0.942);
+            }
+            &:hover h2 {
+              color: rgb(30, 113, 255);
+            }
+            h2 {
+              font-size: 14px;
+              color: gray;
+              font-weight: 100;
+              margin-right: 10px;
+            }
+          }
+          .header-menu-nav-item-link-submenu-link4 {
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            transition: 300ms;
+            position: relative;
+            gap: 170px;
+            &:hover {
+              background-color: rgba(246, 246, 246, 0.942);
+            }
+            &:hover h2 {
+              color: rgb(30, 113, 255);
+            }
+            &:hover i {
+              color: rgb(30, 113, 255);
+            }
+            &:hover .header-menu-nav-item-link-submenu-right-menu1 {
+              display: block;
+            }
+            h2 {
+              font-size: 14px;
+              color: gray;
+              font-weight: 100;
+              margin-right: 1px;
+            }
+            i {
+              color: gray;
+              font-size: 13px;
+              transition: 300ms;
+              &:hover {
+                color: rgb(30, 109, 255);
+              }
+            }
+            .header-menu-nav-item-link-submenu-right-menu1 {
+              position: absolute;
+              width: 350px;
+              height: 280px;
+              background-color: white;
+              right: 375px;
+              top: 0.5px;
+              display: none;
+              .p1 {
+                width: 1005;
+                height: 40px;
+                background-color: white;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-self: center;
+                transition: 300ms;
+                &:hover {
+                  background-color: rgba(246, 246, 246, 0.942);
+                }
+                &:hover h2 {
+                  color: rgb(30, 109, 255);
+                }
+                h2 {
+                  margin-right: 10px;
+                  color: gray;
+                }
+              }
+              .p2 {
+                width: 100%;
+                height: 40px;
+                background-color: white;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-self: center;
+                transition: 300ms;
+                &:hover {
+                  background-color: rgba(246, 246, 246, 0.942);
+                }
+                &:hover h2 {
+                  color: rgb(30, 109, 255);
+                }
+                h2 {
+                  margin-right: 10px;
+                  color: gray;
+                }
+              }
+              .p3 {
+                width: 100%;
+                height: 40px;
+                background-color: white;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-self: center;
+                transition: 300ms;
+                &:hover {
+                  background-color: rgba(246, 246, 246, 0.942);
+                }
+                &:hover h2 {
+                  color: rgb(30, 109, 255);
+                }
+                h2 {
+                  margin-right: 10px;
+                  color: gray;
+                }
+              }
+              .p4 {
+                width: 100%;
+                height: 40px;
+                background-color: white;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-self: center;
+                transition: 300ms;
+                &:hover {
+                  background-color: rgba(246, 246, 246, 0.942);
+                }
+                &:hover h2 {
+                  color: rgb(30, 109, 255);
+                }
+                h2 {
+                  margin-right: 10px;
+                  color: gray;
+                }
+              }
+              .p5 {
+                width: 100%;
+                height: 40px;
+                background-color: white;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-self: center;
+                transition: 300ms;
+                &:hover {
+                  background-color: rgba(246, 246, 246, 0.942);
+                }
+                &:hover h2 {
+                  color: rgb(30, 109, 255);
+                }
+                h2 {
+                  margin-right: 10px;
+                  color: gray;
+                }
+              }
+              .p6 {
+                width: 100%;
+                height: 40px;
+                background-color: white;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-self: center;
+                transition: 300ms;
+                &:hover {
+                  background-color: rgba(246, 246, 246, 0.942);
+                }
+                &:hover h2 {
+                  color: rgb(30, 109, 255);
+                }
+                h2 {
+                  margin-right: 10px;
+                  color: gray;
+                }
+              }
+              .p7 {
+                width: 100%;
+                height: 40px;
+                background-color: white;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-self: center;
+                transition: 300ms;
+                &:hover {
+                  background-color: rgba(246, 246, 246, 0.942);
+                }
+                &:hover h2 {
+                  color: rgb(30, 109, 255);
+                }
+                h2 {
+                  margin-right: 10px;
+                  color: gray;
+                }
+              }
+            }
+          }
+          .header-menu-nav-item-link-submenu-link5 {
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: start;
+            align-items: center;
+            transition: 300ms;
+            &:hover {
+              background-color: rgba(246, 246, 246, 0.942);
+            }
+            &:hover h2 {
+              color: rgb(30, 113, 255);
+            }
+            h2 {
+              font-size: 14px;
+              color: gray;
+              font-weight: 100;
+              margin-right: 10px;
+            }
+          }
+          .header-menu-nav-item-link-submenu-link6 {
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: start;
+            align-items: center;
+            transition: 300ms;
+            position: relative;
+            gap: 283px;
+            &:hover {
+              background-color: rgba(246, 246, 246, 0.942);
+            }
+            &:hover h2 {
+              color: rgb(30, 113, 255);
+            }
+            &:hover i {
+              color: rgb(30, 113, 255);
+            }
+            &:hover .header-menu-nav-item-link-submenu-right-menu2 {
+              display: block;
+            }
+            h2 {
+              font-size: 14px;
+              color: gray;
+              font-weight: 100;
+              margin-right: 10px;
+            }
+            i {
+              color: gray;
+              font-size: 13px;
+              transition: 300ms;
+              &:hover {
+                color: rgb(30, 109, 255);
+              }
+            }
+            .header-menu-nav-item-link-submenu-right-menu2 {
+              position: absolute;
+              width: 350px;
+              height: 320px;
+              background-color: rgb(119, 38, 38);
+              right: 375px;
+              top: 0.5px;
+              display: none;
+
+              .p1 {
+                width: 100;
+                height: 40px;
+                background-color: white;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-self: center;
+                transition: 300ms;
+                &:hover {
+                  background-color: rgba(246, 246, 246, 0.942);
+                }
+                &:hover h2 {
+                  color: rgb(30, 109, 255);
+                }
+                h2 {
+                  margin-right: 10px;
+                  color: gray;
+                }
+              }
+              .p2 {
+                width: 100%;
+                height: 40px;
+                background-color: white;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-self: center;
+                transition: 300ms;
+                &:hover {
+                  background-color: rgba(246, 246, 246, 0.942);
+                }
+                &:hover h2 {
+                  color: rgb(30, 109, 255);
+                }
+                h2 {
+                  margin-right: 10px;
+                  color: gray;
+                }
+              }
+              .p3 {
+                width: 100%;
+                height: 40px;
+                background-color: white;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-self: center;
+                transition: 300ms;
+                &:hover {
+                  background-color: rgba(246, 246, 246, 0.942);
+                }
+                &:hover h2 {
+                  color: rgb(30, 109, 255);
+                }
+                h2 {
+                  margin-right: 10px;
+                  color: gray;
+                }
+              }
+              .p4 {
+                width: 100%;
+                height: 40px;
+                background-color: white;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-self: center;
+                transition: 300ms;
+                &:hover {
+                  background-color: rgba(246, 246, 246, 0.942);
+                }
+                &:hover h2 {
+                  color: rgb(30, 109, 255);
+                }
+                h2 {
+                  margin-right: 10px;
+                  color: gray;
+                }
+              }
+              .p5 {
+                width: 100%;
+                height: 40px;
+                background-color: white;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-self: center;
+                transition: 300ms;
+                &:hover {
+                  background-color: rgba(246, 246, 246, 0.942);
+                }
+                &:hover h2 {
+                  color: rgb(30, 109, 255);
+                }
+                h2 {
+                  margin-right: 10px;
+                  color: gray;
+                }
+              }
+              .p6 {
+                width: 100%;
+                height: 40px;
+                background-color: white;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-self: center;
+                transition: 300ms;
+                &:hover {
+                  background-color: rgba(246, 246, 246, 0.942);
+                }
+                &:hover h2 {
+                  color: rgb(30, 109, 255);
+                }
+                h2 {
+                  margin-right: 10px;
+                  color: gray;
+                }
+              }
+              .p7 {
+                width: 100%;
+                height: 40px;
+                background-color: white;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-self: center;
+                transition: 300ms;
+                &:hover {
+                  background-color: rgba(246, 246, 246, 0.942);
+                }
+                &:hover h2 {
+                  color: rgb(30, 109, 255);
+                }
+                h2 {
+                  margin-right: 10px;
+                  color: gray;
+                }
+              }
+              .p8 {
+                width: 100%;
+                height: 40px;
+                background-color: white;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-self: center;
+                transition: 300ms;
+                &:hover {
+                  background-color: rgba(246, 246, 246, 0.942);
+                }
+                &:hover h2 {
+                  color: rgb(30, 109, 255);
+                }
+                h2 {
+                  margin-right: 10px;
+                  color: gray;
+                }
+              }
+            }
+          }
+          .header-menu-nav-item-link-submenu-link7 {
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: start;
+            align-items: center;
+            transition: 300ms;
+            position: relative;
+            gap: 255px;
+            &:hover {
+              background-color: rgba(246, 246, 246, 0.942);
+            }
+            &:hover h2 {
+              color: rgb(30, 113, 255);
+            }
+            &:hover i {
+              color: rgb(30, 113, 255);
+            }
+            &:hover .header-menu-nav-item-link-submenu-right-menu3 {
+              display: block;
+            }
+            h2 {
+              font-size: 14px;
+              color: gray;
+              font-weight: 100;
+              margin-right: 10px;
+            }
+            i {
+              color: gray;
+              font-size: 13px;
+              transition: 300ms;
+              &:hover {
+                color: rgb(30, 109, 255);
+              }
+            }
+            .header-menu-nav-item-link-submenu-right-menu3 {
+              position: absolute;
+              width: 350px;
+              height: 160px;
+              background-color: white;
+              right: 375px;
+              top: 0.5px;
+              display: none;
+
+              .p1 {
+                width: 1005;
+                height: 40px;
+                background-color: white;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-self: center;
+                transition: 300ms;
+                &:hover {
+                  background-color: rgba(246, 246, 246, 0.942);
+                }
+                &:hover h2 {
+                  color: rgb(30, 109, 255);
+                }
+                h2 {
+                  margin-right: 10px;
+                  color: gray;
+                }
+              }
+              .p2 {
+                width: 100%;
+                height: 40px;
+                background-color: white;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-self: center;
+                transition: 300ms;
+                &:hover {
+                  background-color: rgba(246, 246, 246, 0.942);
+                }
+                &:hover h2 {
+                  color: rgb(30, 109, 255);
+                }
+                h2 {
+                  margin-right: 10px;
+                  color: gray;
+                }
+              }
+              .p3 {
+                width: 100%;
+                height: 40px;
+                background-color: white;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-self: center;
+                transition: 300ms;
+                &:hover {
+                  background-color: rgba(246, 246, 246, 0.942);
+                }
+                &:hover h2 {
+                  color: rgb(30, 109, 255);
+                }
+                h2 {
+                  margin-right: 10px;
+                  color: gray;
+                }
+              }
+              .p4 {
+                width: 100%;
+                height: 40px;
+                background-color: white;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-self: center;
+                transition: 300ms;
+                &:hover {
+                  background-color: rgba(246, 246, 246, 0.942);
+                }
+                &:hover h2 {
+                  color: rgb(30, 109, 255);
+                }
+                h2 {
+                  margin-right: 10px;
+                  color: gray;
+                }
+              }
+            }
+          }
+          .header-menu-nav-item-link-submenu-link8 {
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: start;
+            align-items: center;
+            transition: 300ms;
+
+            &:hover {
+              background-color: rgba(246, 246, 246, 0.942);
+            }
+            &:hover h2 {
+              color: rgb(30, 113, 255);
+            }
+            h2 {
+              font-size: 14px;
+              color: gray;
+              font-weight: 100;
+              margin-right: 10px;
+            }
+          }
+          .header-menu-nav-item-link-submenu-link9 {
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: start;
+            align-items: center;
+            transition: 300ms;
+
+            &:hover {
+              background-color: rgba(246, 246, 246, 0.942);
+            }
+            &:hover h2 {
+              color: rgb(30, 113, 255);
+            }
+            h2 {
+              font-size: 14px;
+              color: gray;
+              font-weight: 100;
+              margin-right: 10px;
+            }
+          }
+          .header-menu-nav-item-link-submenu-link10 {
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: start;
+            align-items: center;
+            transition: 300ms;
+
+            &:hover {
+              background-color: rgba(246, 246, 246, 0.942);
+            }
+            &:hover h2 {
+              color: rgb(30, 113, 255);
+            }
+            h2 {
+              font-size: 14px;
+              color: gray;
+              font-weight: 100;
+              margin-right: 10px;
+            }
+          }
+          .header-menu-nav-item-link-submenu-link11 {
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: start;
+            align-items: center;
+            transition: 300ms;
+
+            &:hover {
+              background-color: rgba(246, 246, 246, 0.942);
+            }
+            &:hover h2 {
+              color: rgb(30, 113, 255);
+            }
+            h2 {
+              font-size: 14px;
+              color: gray;
+              font-weight: 100;
+              margin-right: 10px;
+            }
+          }
+          .header-menu-nav-item-link-submenu-link12 {
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: start;
+            align-items: center;
+            transition: 300ms;
+
+            &:hover {
+              background-color: rgba(246, 246, 246, 0.942);
+            }
+            &:hover h2 {
+              color: rgb(30, 113, 255);
+            }
+            h2 {
+              font-size: 14px;
+              color: gray;
+              font-weight: 100;
+              margin-right: 10px;
+            }
+          }
+          .header-menu-nav-item-link-submenu-link13 {
+            width: 100%;
+            height: 20px;
+            background-color: white;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: start;
+            align-items: center;
+            transition: 300ms;
+
+            &:hover {
+              background-color: rgba(246, 246, 246, 0.942);
+            }
+            &:hover h2 {
+              color: rgb(30, 113, 255);
+            }
+            h2 {
+              font-size: 14px;
+              color: gray;
+              font-weight: 100;
+              margin-right: 10px;
+            }
+          }
+        }
+        .header-menu-nav-item-link-submenu1 {
+          width: 22vw;
+          height: 50vh;
+          background-color: rgb(255, 255, 255);
+          position: absolute;
+          z-index: 2;
+          top: 40px;
+          display: none;
+          .header-menu-nav-item-link-submenu1-link1 {
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: start;
+            align-items: center;
+            transition: 300ms;
+            &:hover {
+              background-color: rgba(246, 246, 246, 0.942);
+            }
+            &:hover h2 {
+              color: rgb(30, 113, 255);
+            }
+            h2 {
+              font-size: 14px;
+              color: gray;
+              font-weight: 100;
+              margin-right: 10px;
+            }
+          }
+          .header-menu-nav-item-link-submenu1-link2 {
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: start;
+            align-items: center;
+            transition: 300ms;
+            &:hover {
+              background-color: rgba(246, 246, 246, 0.942);
+            }
+            &:hover h2 {
+              color: rgb(30, 113, 255);
+            }
+            h2 {
+              font-size: 14px;
+              color: gray;
+              font-weight: 100;
+              margin-right: 10px;
+            }
+          }
+          .header-menu-nav-item-link-submenu1-link3 {
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: start;
+            align-items: center;
+            transition: 300ms;
+            &:hover {
+              background-color: rgba(246, 246, 246, 0.942);
+            }
+            &:hover h2 {
+              color: rgb(30, 113, 255);
+            }
+            h2 {
+              font-size: 14px;
+              color: gray;
+              font-weight: 100;
+              margin-right: 10px;
+            }
+          }
+          .header-menu-nav-item-link-submenu1-link4 {
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: start;
+            align-items: center;
+            transition: 300ms;
+            &:hover {
+              background-color: rgba(246, 246, 246, 0.942);
+            }
+            &:hover h2 {
+              color: rgb(30, 113, 255);
+            }
+            h2 {
+              font-size: 14px;
+              color: gray;
+              font-weight: 100;
+              margin-right: 10px;
+            }
+          }
+          .header-menu-nav-item-link-submenu1-link5 {
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: start;
+            align-items: center;
+            transition: 300ms;
+            &:hover {
+              background-color: rgba(246, 246, 246, 0.942);
+            }
+            &:hover h2 {
+              color: rgb(30, 113, 255);
+            }
+            h2 {
+              font-size: 14px;
+              color: gray;
+              font-weight: 100;
+              margin-right: 10px;
+            }
+          }
+        }
+        .header-menu-nav-item-link-submenu2 {
+          width: 20vw;
+          height: 12vh;
+          background-color: white;
+          position: absolute;
+          z-index: 2;
+          top: 40px;
+          display: none;
+          .header-menu-nav-item-link-submenu1-link1 {
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: start;
+            align-items: center;
+            transition: 300ms;
+            &:hover {
+              background-color: rgba(246, 246, 246, 0.942);
+            }
+            &:hover h2 {
+              color: rgb(30, 113, 255);
+            }
+            h2 {
+              font-size: 14px;
+              color: gray;
+              font-weight: 100;
+              margin-right: 10px;
+            }
+          }
+          .header-menu-nav-item-link-submenu1-link2 {
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: start;
+            align-items: center;
+            transition: 300ms;
+            &:hover {
+              background-color: rgba(246, 246, 246, 0.942);
+            }
+            &:hover h2 {
+              color: rgb(30, 113, 255);
+            }
+            h2 {
+              font-size: 14px;
+              color: gray;
+              font-weight: 100;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+      .header-menu-nav-item-link-submenu3 {
+        width: 20vw;
+        height: 25vh;
+        background-color: white;
+        position: absolute;
+        z-index: 2;
+        top: 40px;
+        display: none;
+        .header-menu-nav-item-link-submenu1-link1 {
+          width: 100%;
+          height: 50px;
+          background-color: white;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: start;
+          align-items: center;
+          transition: 300ms;
+          &:hover {
+            background-color: rgba(246, 246, 246, 0.942);
+          }
+          &:hover h2 {
+            color: rgb(30, 113, 255);
+          }
+          h2 {
+            font-size: 14px;
+            color: gray;
+            font-weight: 100;
+            margin-right: 10px;
+          }
+        }
+        .header-menu-nav-item-link-submenu1-link2 {
+          width: 100%;
+          height: 50px;
+          background-color: white;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: start;
+          align-items: center;
+          transition: 300ms;
+          &:hover {
+            background-color: rgba(246, 246, 246, 0.942);
+          }
+          &:hover h2 {
+            color: rgb(30, 113, 255);
+          }
+          h2 {
+            font-size: 14px;
+            color: gray;
+            font-weight: 100;
+            margin-right: 10px;
+          }
+        }
+        .header-menu-nav-item-link-submenu1-link3 {
+          width: 100%;
+          height: 50px;
+          background-color: white;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: start;
+          align-items: center;
+          transition: 300ms;
+          &:hover {
+            background-color: rgba(246, 246, 246, 0.942);
+          }
+          &:hover h2 {
+            color: rgb(30, 113, 255);
+          }
+          h2 {
+            font-size: 14px;
+            color: gray;
+            font-weight: 100;
+            margin-right: 10px;
+          }
+        }
+        .header-menu-nav-item-link-submenu1-link4 {
+          width: 100%;
+          height: 50px;
+          background-color: white;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: start;
+          align-items: center;
+          transition: 300ms;
+          &:hover {
+            background-color: rgba(246, 246, 246, 0.942);
+          }
+          &:hover h2 {
+            color: rgb(30, 113, 255);
+          }
+          h2 {
+            font-size: 14px;
+            color: gray;
+            font-weight: 100;
+            margin-right: 10px;
+          }
+        }
+      }
+      .header-menu-nav-item-link-submenu4 {
+        width: 20vw;
+        height: 35vh;
+        background-color: white;
+        position: absolute;
+        z-index: 2;
+        top: 40px;
+        display: none;
+        .header-menu-nav-item-link-submenu4-link1 {
+          width: 100%;
+          height: 50px;
+          background-color: white;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: start;
+          align-items: center;
+          transition: 300ms;
+          &:hover {
+            background-color: rgba(246, 246, 246, 0.942);
+          }
+          &:hover h2 {
+            color: rgb(30, 113, 255);
+          }
+          h2 {
+            font-size: 14px;
+            color: gray;
+            font-weight: 100;
+            margin-right: 10px;
+          }
+        }
+        .header-menu-nav-item-link-submenu4-link2 {
+          width: 100%;
+          height: 50px;
+          background-color: white;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: start;
+          align-items: center;
+          transition: 300ms;
+          &:hover {
+            background-color: rgba(246, 246, 246, 0.942);
+          }
+          &:hover h2 {
+            color: rgb(30, 113, 255);
+          }
+          h2 {
+            font-size: 14px;
+            color: gray;
+            font-weight: 100;
+            margin-right: 10px;
+          }
+        }
+        .header-menu-nav-item-link-submenu4-link3 {
+          width: 100%;
+          height: 50px;
+          background-color: white;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: start;
+          align-items: center;
+          transition: 300ms;
+          &:hover {
+            background-color: rgba(246, 246, 246, 0.942);
+          }
+          &:hover h2 {
+            color: rgb(30, 113, 255);
+          }
+          h2 {
+            font-size: 14px;
+            color: gray;
+            font-weight: 100;
+            margin-right: 10px;
+          }
+        }
+        .header-menu-nav-item-link-submenu4-link4 {
+          width: 100%;
+          height: 50px;
+          background-color: white;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: start;
+          align-items: center;
+          transition: 300ms;
+          &:hover {
+            background-color: rgba(246, 246, 246, 0.942);
+          }
+          &:hover h2 {
+            color: rgb(30, 113, 255);
+          }
+          h2 {
+            font-size: 14px;
+            color: gray;
+            font-weight: 100;
+            margin-right: 10px;
+          }
+        }
+        .header-menu-nav-item-link-submenu4-link5 {
+          width: 100%;
+          height: 50px;
+          background-color: white;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: start;
+          align-items: center;
+          transition: 300ms;
+          &:hover {
+            background-color: rgba(246, 246, 246, 0.942);
+          }
+          &:hover h2 {
+            color: rgb(30, 113, 255);
+          }
+          h2 {
+            font-size: 14px;
+            color: gray;
+            font-weight: 100;
+            margin-right: 10px;
+          }
+        }
+        .header-menu-nav-item-link-submenu4-link6 {
+          width: 100%;
+          height: 50px;
+          background-color: white;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: start;
+          align-items: center;
+          transition: 300ms;
+          &:hover {
+            background-color: rgba(246, 246, 246, 0.942);
+          }
+          &:hover h2 {
+            color: rgb(30, 113, 255);
+          }
+          h2 {
+            font-size: 14px;
+            color: gray;
+            font-weight: 100;
+            margin-right: 10px;
+          }
+        }
+      }
+      .header-menu-nav-item-link-submenu5 {
+        width: 19vw;
+        height: 10vh;
+        background-color: blueviolet;
+        position: absolute;
+        z-index: 2;
+        top: 40px;
+        display: none;
+        .header-menu-nav-item-link-submenu5-link1 {
+          width: 100%;
+          height: 50px;
+          background-color: white;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: start;
+          align-items: center;
+          transition: 300ms;
+          &:hover {
+            background-color: rgba(246, 246, 246, 0.942);
+          }
+          &:hover h2 {
+            color: rgb(30, 113, 255);
+          }
+          h2 {
+            font-size: 14px;
+            color: gray;
+            font-weight: 100;
+            margin-right: 10px;
+          }
+          i {
+            color: gray;
+            font-size: 13px;
+            transition: 300ms;
+            &:hover {
+              color: rgb(30, 109, 255);
+            }
+          }
+        }
+        .header-menu-nav-item-link-submenu5-link2 {
+          width: 100%;
+          height: 50px;
+          background-color: white;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: start;
+          align-items: center;
+          transition: 300ms;
+          gap: 210px;
+          position: relative;
+          &:hover {
+            background-color: rgba(246, 246, 246, 0.942);
+          }
+          &:hover h2 {
+            color: rgb(30, 113, 255);
+          }
+          &:hover i {
+            color: rgb(30, 113, 255);
+          }
+          &:hover .header-menu-nav-item-link-submenu-right-menu-last {
+            display: block;
+          }
+
+          h2 {
+            font-size: 14px;
+            color: gray;
+            font-weight: 100;
+            margin-right: 10px;
+          }
+          i {
+            color: gray;
+            font-size: 13px;
+            transition: 300ms;
+            &:hover {
+              color: rgb(30, 109, 255);
+            }
+          }
+        }
+        .header-menu-nav-item-link-submenu-right-menu-last {
+          position: absolute;
+          width: 87px;
+          height: 200px;
+          background-color: white;
+          right: 320px;
+          top: 0.5px;
+          display: none;
+          transition: 300ms;
+          &:hover .p1,
+          .p2,
+          .p3,
+          .p4 {
+            background-color: rgba(246, 246, 246, 0.942);
+          }
+          .p1 {
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            transition: 300ms;
+            h2 {
+              color: gray;
+            }
+            &:hover h2 {
+              color: dodgerblue;
+            }
+          }
+          .p2 {
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            transition: 300ms;
+            h2 {
+              color: gray;
+            }
+            &:hover h2 {
+              color: dodgerblue;
+            }
+          }
+          .p3 {
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            transition: 300ms;
+            h2 {
+              color: gray;
+            }
+            &:hover h2 {
+              color: dodgerblue;
+            }
+          }
+          .p4 {
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            transition: 300ms;
+            h2 {
+              color: gray;
+            }
+            &:hover h2 {
+              color: dodgerblue;
+            }
+          }
+        }
+      }
+      .header-menu-nav-item-link-submenu6 {
+        width: 86vw;
+        height: 30vh;
+        background-color: rgb(208, 210, 212);
+        position: absolute;
+        z-index: 2;
+        top: 41px;
+        left: calc(100% - 8vw / 2);
+        display: none;
+        cursor: pointer;
+        .p-part {
+          width: 87vw;
+          height: 35vh;
+          background-color: gray;
+          display: flex;
+          flex-flow: row ;
+          justify-content: center;
+          align-items: center;
+          gap: 1px;
+          position: relative;
+          .part1 {
+            width: 20%;
+            height: 29vh;
+            background-color: rgb(82, 88, 88);
+            margin-bottom: 48px;
+            .part-h{
+              width: 100%;
+              height: 40px;
+              background-color: white;
+              display: flex;
+              flex-flow: row wrap;
+              justify-content: center;
+              align-items: center;
+              gap: 220px;
+              transition: 300ms;
+              &:hover{
+                background-color: rgba(246, 246, 246, 0.942);
+              }
+              &:hover h2 {
+                color: dodgerblue;
+              }
+              &:hover h3 {
+                color: dodgerblue;
+              }
+              h2 {
+                color: gray;
+                font-size: 14px;
+                font-weight: 100;
+
+              }
+              h3 {
+                color: gray;
+                font-size: 14px;
+                font-weight: 100;
+
+              }
+            }
+            .part-hh{
+              width: 100%;
+              height: 40px;
+              background-color: white;
+              display: flex;
+              flex-flow: row wrap;
+              justify-content: center;
+              align-items: center;
+              gap: 190px;
+              transition: 300ms;
+              &:hover{
+                background-color: rgba(246, 246, 246, 0.942);
+              }
+              &:hover h2 {
+                color: dodgerblue;
+              }
+              &:hover h3 {
+                color: dodgerblue;
+              }
+              h2 {
+                color: gray;
+                font-size: 14px;
+                font-weight: 100;
+
+              }
+              h3 {
+                color: gray;
+                font-size: 14px;
+                font-weight: 100;
+
+              }
+            }
+            .part-hhh{
+              width: 100%;
+              height: 40px;
+              background-color: white;
+              display: flex;
+              flex-flow: row wrap;
+              justify-content: center;
+              align-items: center;
+              gap: 155px;
+              transition: 300ms;
+              &:hover{
+                background-color: rgba(246, 246, 246, 0.942);
+              }
+              &:hover h2 {
+                color: dodgerblue;
+              }
+              &:hover h3 {
+                color: dodgerblue;
+              }
+              h2 {
+                color: gray;
+                font-size: 14px;
+                font-weight: 100;
+
+              }
+              h3 {
+                color: gray;
+                font-size: 14px;
+                font-weight: 100;
+
+              }
+            }
+            .part-hhhh{
+              width: 100%;
+              height: 40px;
+              background-color: white;
+              display: flex;
+              flex-flow: row wrap;
+              justify-content: center;
+              align-items: center;
+              gap: 240px;
+              transition: 300ms;
+              &:hover{
+                background-color: rgba(246, 246, 246, 0.942);
+              }
+              &:hover h2 {
+                color: dodgerblue;
+              }
+              &:hover h3 {
+                color: dodgerblue;
+              }
+              h2 {
+                color: gray;
+                font-size: 14px;
+                font-weight: 100;
+
+              }
+              h3 {
+                color: gray;
+                font-size: 14px;
+                font-weight: 100;
+
+              }
+            }
+            .part-hhhhh{
+              width: 100%;
+              height: 40px;
+              background-color: white;
+              display: flex;
+              flex-flow: row wrap;
+              justify-content: center;
+              align-items: center;
+              gap: 195px;
+              transition: 300ms;
+              &:hover{
+                background-color: rgba(246, 246, 246, 0.942);
+              }
+              &:hover h2 {
+                color: dodgerblue;
+              }
+              &:hover h3 {
+                color: dodgerblue;
+              }
+              h2 {
+                color: gray;
+                font-size: 14px;
+                font-weight: 100;
+
+              }
+              h3 {
+                color: gray;
+                font-size: 14px;
+                font-weight: 100;
+
+              }
+            }
+            .part-hhhhhh{
+              width: 100%;
+              height: 40px;
+              background-color: white;
+              display: flex;
+              flex-flow: row wrap;
+              justify-content: center;
+              align-items: center;
+              gap: 135px;
+              transition: 300ms;
+              &:hover{
+                background-color: rgba(246, 246, 246, 0.942);
+              }
+              &:hover h2 {
+                color: dodgerblue;
+              }
+              &:hover h3 {
+                color: dodgerblue;
+              }
+              h2 {
+                color: gray;
+                font-size: 14px;
+                font-weight: 100;
+
+              }
+              h3 {
+                color: gray;
+                font-size: 14px;
+                font-weight: 100;
+
+              }
+            }
+          }
+          .part2{
+            width: 20%;
+            height: 29vh;
+            background-color: white;
+            margin-bottom: 48px;
+            .part-h{
+              width: 100%;
+              height: 40px;
+              background-color: white;
+              display: flex;
+              flex-flow: row wrap;
+              justify-content: center;
+              align-items: center;
+              gap: 210px;
+              transition: 300ms;
+              &:hover{
+                background-color: rgba(246, 246, 246, 0.942);
+              }
+              &:hover h2 {
+                color: dodgerblue;
+              }
+              &:hover h3 {
+                color: dodgerblue;
+              }
+              h2 {
+                color: gray;
+                font-size: 14px;
+                font-weight: 100;
+
+              }
+              h3 {
+                color: gray;
+                font-size: 14px;
+                font-weight: 100;
+
+              }
+            }
+            .part-hh{
+              width: 100%;
+              height: 40px;
+              background-color: white;
+              display: flex;
+              flex-flow: row wrap;
+              justify-content: center;
+              align-items: center;
+              gap: 211px;
+              transition: 300ms;
+              &:hover{
+                background-color: rgba(246, 246, 246, 0.942);
+              }
+              &:hover h2 {
+                color: dodgerblue;
+              }
+              &:hover h3 {
+                color: dodgerblue;
+              }
+              h2 {
+                color: gray;
+                font-size: 14px;
+                font-weight: 100;
+
+              }
+              h3 {
+                color: gray;
+                font-size: 14px;
+                font-weight: 100;
+
+              }
+            }
+            .part-hhh{
+              width: 100%;
+              height: 40px;
+              background-color: white;
+              display: flex;
+              flex-flow: row wrap;
+              justify-content: center;
+              align-items: center;
+              gap: 210px;
+              transition: 300ms;
+              &:hover{
+                background-color: rgba(246, 246, 246, 0.942);
+              }
+              &:hover h2 {
+                color: dodgerblue;
+              }
+              &:hover h3 {
+                color: dodgerblue;
+              }
+              h2 {
+                color: gray;
+                font-size: 14px;
+                font-weight: 100;
+
+              }
+              h3 {
+                color: gray;
+                font-size: 14px;
+                font-weight: 100;
+
+              }
+            }
+            .part-hhhh{
+              width: 100%;
+              height: 40px;
+              background-color: white;
+              display: flex;
+              flex-flow: row wrap;
+              justify-content: center;
+              align-items: center;
+              gap: 205px;
+              transition: 300ms;
+              &:hover{
+                background-color: rgba(246, 246, 246, 0.942);
+              }
+              &:hover h2 {
+                color: dodgerblue;
+              }
+              &:hover h3 {
+                color: dodgerblue;
+              }
+              h2 {
+                color: gray;
+                font-size: 14px;
+                font-weight: 100;
+
+              }
+              h3 {
+                color: gray;
+                font-size: 14px;
+                font-weight: 100;
+
+              }
+            }
+            .part-hhhhh{
+              width: 100%;
+              height: 40px;
+              background-color: white;
+              display: flex;
+              flex-flow: row wrap;
+              justify-content: center;
+              align-items: center;
+              gap: 200px;
+              transition: 300ms;
+              &:hover{
+                background-color: rgba(246, 246, 246, 0.942);
+              }
+              &:hover h2 {
+                color: dodgerblue;
+              }
+              &:hover h3 {
+                color: dodgerblue;
+              }
+              h2 {
+                color: gray;
+                font-size: 14px;
+                font-weight: 100;
+
+              }
+              h3 {
+                color: gray;
+                font-size: 14px;
+                font-weight: 100;
+
+              }
+            }
+            .part-hhhhhh{
+              width: 100%;
+              height: 40px;
+              background-color: white;
+              display: flex;
+              flex-flow: row wrap;
+              justify-content: center;
+              align-items: center;
+              gap: 220px;
+              transition: 300ms;
+              &:hover{
+                background-color: rgba(246, 246, 246, 0.942);
+              }
+              &:hover h2 {
+                color: dodgerblue;
+              }
+              &:hover h3 {
+                color: dodgerblue;
+              }
+              h2 {
+                color: gray;
+                font-size: 14px;
+                font-weight: 100;
+
+              }
+              h3 {
+                color: gray;
+                font-size: 14px;
+                font-weight: 100;
+
+              }
+            }
+          }
+          .part3 {
+            width: 20%;
+            height: 29vh;
+            background-color: cadetblue;
+            margin-bottom: 48px;
+              .part-h{
+                width: 100%;
+                height: 40px;
+                background-color: white;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 190px;
+                transition: 300ms;
+                &:hover{
+                  background-color: rgba(246, 246, 246, 0.942);
+                }
+                &:hover h2 {
+                  color: dodgerblue;
+                }
+                &:hover h3 {
+                  color: dodgerblue;
+                }
+                h2 {
+                  color: gray;
+                  font-size: 14px;
+                  font-weight: 100;
+  
+                }
+                h3 {
+                  color: gray;
+                  font-size: 14px;
+                  font-weight: 100;
+  
+                }
+              }
+              .part-hh{
+                width: 100%;
+                height: 40px;
+                background-color: white;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 230px;
+                transition: 300ms;
+                &:hover{
+                  background-color: rgba(246, 246, 246, 0.942);
+                }
+                &:hover h2 {
+                  color: dodgerblue;
+                }
+                &:hover h3 {
+                  color: dodgerblue;
+                }
+                h2 {
+                  color: gray;
+                  font-size: 14px;
+                  font-weight: 100;
+  
+                }
+                h3 {
+                  color: gray;
+                  font-size: 14px;
+                  font-weight: 100;
+  
+                }
+              }
+              .part-hhh{
+                width: 100%;
+                height: 40px;
+                background-color: white;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 180px;
+                transition: 300ms;
+                &:hover{
+                  background-color: rgba(246, 246, 246, 0.942);
+                }
+                &:hover h2 {
+                  color: dodgerblue;
+                }
+                &:hover h3 {
+                  color: dodgerblue;
+                }
+                h2 {
+                  color: gray;
+                  font-size: 14px;
+                  font-weight: 100;
+  
+                }
+                h3 {
+                  color: gray;
+                  font-size: 14px;
+                  font-weight: 100;
+  
+                }
+              }
+              .part-hhhh{
+                width: 100%;
+                height: 40px;
+                background-color: white;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 160px;
+                transition: 300ms;
+                &:hover{
+                  background-color: rgba(246, 246, 246, 0.942);
+                }
+                &:hover h2 {
+                  color: dodgerblue;
+                }
+                &:hover h3 {
+                  color: dodgerblue;
+                }
+                h2 {
+                  color: gray;
+                  font-size: 14px;
+                  font-weight: 100;
+  
+                }
+                h3 {
+                  color: gray;
+                  font-size: 14px;
+                  font-weight: 100;
+  
+                }
+              }
+              .part-hhhhh{
+                width: 100%;
+                height: 40px;
+                background-color: white;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 190px;
+                transition: 300ms;
+                &:hover{
+                  background-color: rgba(246, 246, 246, 0.942);
+                }
+                &:hover h2 {
+                  color: dodgerblue;
+                }
+                &:hover h3 {
+                  color: dodgerblue;
+                }
+                h2 {
+                  color: gray;
+                  font-size: 14px;
+                  font-weight: 100;
+  
+                }
+                h3 {
+                  color: gray;
+                  font-size: 14px;
+                  font-weight: 100;
+  
+                }
+              }
+              .part-hhhhhh{
+                width: 100%;
+                height: 40px;
+                background-color: white;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 220px;
+                transition: 300ms;
+                &:hover{
+                  background-color: rgba(246, 246, 246, 0.942);
+                }
+                &:hover h2 {
+                  color: dodgerblue;
+                }
+                &:hover h3 {
+                  color: dodgerblue;
+                }
+                h2 {
+                  color: gray;
+                  font-size: 14px;
+                  font-weight: 100;
+  
+                }
+                h3 {
+                  color: gray;
+                  font-size: 14px;
+                  font-weight: 100;
+  
+                }
+              }
+            }
+          .part4 {
+            width: 20%;
+            height: 29vh;
+            background-color: cadetblue;
+            margin-bottom: 48px;
+            .part-h{
+                width: 100%;
+                height: 40px;
+                background-color: white;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 225px;
+                transition: 300ms;
+                &:hover{
+                  background-color: rgba(246, 246, 246, 0.942);
+                }
+                &:hover h2 {
+                  color: dodgerblue;
+                }
+                &:hover h3 {
+                  color: dodgerblue;
+                }
+                h2 {
+                  color: gray;
+                  font-size: 14px;
+                  font-weight: 100;
+  
+                }
+                h3 {
+                  color: gray;
+                  font-size: 14px;
+                  font-weight: 100;
+  
+                }
+              }
+              .part-hh{
+                width: 100%;
+                height: 40px;
+                background-color: white;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 205px;
+                transition: 300ms;
+                &:hover{
+                  background-color: rgba(246, 246, 246, 0.942);
+                }
+                &:hover h2 {
+                  color: dodgerblue;
+                }
+                &:hover h3 {
+                  color: dodgerblue;
+                }
+                h2 {
+                  color: gray;
+                  font-size: 14px;
+                  font-weight: 100;
+  
+                }
+                h3 {
+                  color: gray;
+                  font-size: 14px;
+                  font-weight: 100;
+  
+                }
+              }
+              .part-hhh{
+                width: 100%;
+                height: 40px;
+                background-color: white;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 195px;
+                transition: 300ms;
+                &:hover{
+                  background-color: rgba(246, 246, 246, 0.942);
+                }
+                &:hover h2 {
+                  color: dodgerblue;
+                }
+                &:hover h3 {
+                  color: dodgerblue;
+                }
+                h2 {
+                  color: gray;
+                  font-size: 14px;
+                  font-weight: 100;
+  
+                }
+                h3 {
+                  color: gray;
+                  font-size: 14px;
+                  font-weight: 100;
+  
+                }
+              }
+              .part-hhhh{
+                width: 100%;
+                height: 40px;
+                background-color: white;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 105px;
+                transition: 300ms;
+                &:hover{
+                  background-color: rgba(246, 246, 246, 0.942);
+                }
+                &:hover h2 {
+                  color: dodgerblue;
+                }
+                &:hover h3 {
+                  color: dodgerblue;
+                }
+                h2 {
+                  color: gray;
+                  font-size: 14px;
+                  font-weight: 100;
+  
+                }
+                h3 {
+                  color: gray;
+                  font-size: 14px;
+                  font-weight: 100;
+  
+                }
+              }
+              .part-hhhhh{
+                width: 100%;
+                height: 40px;
+                background-color: white;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 155px;
+                transition: 300ms;
+                &:hover{
+                  background-color: rgba(246, 246, 246, 0.942);
+                }
+                &:hover h2 {
+                  color: dodgerblue;
+                }
+                &:hover h3 {
+                  color: dodgerblue;
+                }
+                h2 {
+                  color: gray;
+                  font-size: 14px;
+                  font-weight: 100;
+  
+                }
+                h3 {
+                  color: gray;
+                  font-size: 14px;
+                  font-weight: 100;
+  
+                }
+              }
+              .part-hhhhhh{
+                width: 100%;
+                height: 40px;
+                background-color: white;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 165px;
+                transition: 300ms;
+                &:hover{
+                  background-color: rgba(246, 246, 246, 0.942);
+                }
+                &:hover h2 {
+                  color: dodgerblue;
+                }
+                &:hover h3 {
+                  color: dodgerblue;
+                }
+                h2 {
+                  color: gray;
+                  font-size: 14px;
+                  font-weight: 100;
+  
+                }
+                h3 {
+                  color: gray;
+                  font-size: 14px;
+                  font-weight: 100;
+  
+                }
+              }
+          }
+          .part5 {
+            width: 20%;
+            height: 29vh;
+            background-color: cadetblue;
+            margin-bottom: 48px;
+        
+            .part-h{
+              width: 100%;
+              height: 40px;
+              background-color: white;
+              display: flex;
+              flex-flow: row wrap;
+              justify-content: center;
+              align-items: center;
+              gap: 205px;
+              transition: 300ms;
+              &:hover{
+                background-color: rgba(246, 246, 246, 0.942);
+              }
+              &:hover h2 {
+                color: dodgerblue;
+              }
+              &:hover h3 {
+                color: dodgerblue;
+              }
+              h2 {
+                color: gray;
+                font-size: 14px;
+                font-weight: 100;
+
+              }
+              h3 {
+                color: gray;
+                font-size: 14px;
+                font-weight: 100;
+
+              }
+            }
+            .part-hh{
+              width: 100%;
+              height: 40px;
+              background-color: white;
+              display: flex;
+              flex-flow: row wrap;
+              justify-content: center;
+              align-items: center;
+              gap: 200px;
+              transition: 300ms;
+              &:hover{
+                background-color: rgba(246, 246, 246, 0.942);
+              }
+              &:hover h2 {
+                color: dodgerblue;
+              }
+              &:hover h3 {
+                color: dodgerblue;
+              }
+              h2 {
+                color: gray;
+                font-size: 14px;
+                font-weight: 100;
+
+              }
+              h3 {
+                color: gray;
+                font-size: 14px;
+                font-weight: 100;
+
+              }
+            }
+            .part-hhh{
+              width: 100%;
+              height: 40px;
+              background-color: white;
+              display: flex;
+              flex-flow: row wrap;
+              justify-content: center;
+              align-items: center;
+              gap: 225px;
+              transition: 300ms;
+              &:hover{
+                background-color: rgba(246, 246, 246, 0.942);
+              }
+              &:hover h2 {
+                color: dodgerblue;
+              }
+              &:hover h3 {
+                color: dodgerblue;
+              }
+              h2 {
+                color: gray;
+                font-size: 14px;
+                font-weight: 100;
+
+              }
+              h3 {
+                color: gray;
+                font-size: 14px;
+                font-weight: 100;
+
+              }
+            }
+            .part-hhhh{
+              width: 100%;
+              height: 40px;
+              background-color: white;
+              display: flex;
+              flex-flow: row wrap;
+              justify-content: center;
+              align-items: center;
+              gap: 190px;
+              transition: 300ms;
+              &:hover{
+                background-color: rgba(246, 246, 246, 0.942);
+              }
+              &:hover h2 {
+                color: dodgerblue;
+              }
+              &:hover h3 {
+                color: dodgerblue;
+              }
+              h2 {
+                color: gray;
+                font-size: 14px;
+                font-weight: 100;
+
+              }
+              h3 {
+                color: gray;
+                font-size: 14px;
+                font-weight: 100;
+
+              }
+            }
+            .part-hhhhh{
+              width: 100%;
+              height: 40px;
+              background-color: white;
+              display: flex;
+              flex-flow: row wrap;
+              justify-content: center;
+              align-items: center;
+              gap: 210px;
+              transition: 300ms;
+              &:hover{
+                background-color: rgba(246, 246, 246, 0.942);
+              }
+              &:hover h2 {
+                color: dodgerblue;
+              }
+              &:hover h3 {
+                color: dodgerblue;
+              }
+              h2 {
+                color: gray;
+                font-size: 14px;
+                font-weight: 100;
+
+              }
+              h3 {
+                color: gray;
+                font-size: 14px;
+                font-weight: 100;
+
+              }
+            }
+            .part-hhhhhh{
+              width: 100%;
+              height: 40px;
+              background-color: white;
+              display: flex;
+              flex-flow: row wrap;
+              justify-content: center;
+              align-items: center;
+              gap: 210px;
+              transition: 300ms;
+              &:hover{
+                background-color: rgba(246, 246, 246, 0.942);
+              }
+              &:hover h2 {
+                color: dodgerblue;
+              }
+              &:hover h3 {
+                color: dodgerblue;
+              }
+              h2 {
+                color: gray;
+                font-size: 14px;
+                font-weight: 100;
+
+              }
+              h3 {
+                color: gray;
+                font-size: 14px;
+                font-weight: 100;
+
+              }
+            }
+          }
+          .last-part{
+            width: 100%;
+            height: 6vh;
+            background-color: whitesmoke;
+            position: absolute;
+            top: calc(100% - 2.5vw );
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: start;
+            align-items: center;
+            transition: 300ms;
+            &:hover h4{
+              color: rgb(0, 72, 255);
+            }
+            h4{
+              color: orangered;
+              font-weight: 100;
+              font-size: 13px;
+              transition: 300ms;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .label {
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 20px;
+    background-color: rgb(35, 35, 35);
+    padding: 5px;
+    margin: 15px;
+    color: whitesmoke;
+    border-radius: 15px;
+    text-shadow: 0px 0px 3px;
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+}

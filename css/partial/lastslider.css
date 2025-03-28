@@ -1,0 +1,109 @@
+@font-face {
+  font-family: shabnam;
+  src: url(../font/Shabnam-Medium-FD.woff);
+}
+.back-back-last-slider {
+  width: 100%;
+  height: 300px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: shabnam;
+  .back-last-slider {
+    width: 80%;
+    height: 250px;
+    background-color: brown;
+    .title {
+      width: 100%;
+      height: 60px;
+      background-color: whitesmoke;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 1000px;
+
+      h2 {
+        color: gray;
+        font-weight: 100;
+        transition: 300ms;
+        &:hover {
+          color: black;
+        }
+      }
+      a {
+        font-weight: 100;
+        text-decoration: none;
+        color: rgb(187, 181, 181);
+        font-size: 14px;
+        transition: 300ms;
+        &:hover {
+          color: black;
+        }
+      }
+    }
+    .slider {
+      width: 100%;
+      height: 200px;
+      background-color: whitesmoke;
+    }
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      box-shadow: 0px 0px 2px;
+      img {
+        width: 100%;
+        height: 70%;
+        border-radius: 10px;
+      }
+    }
+    .title1 {
+      width: 100%;
+      height: 30%;
+      background-color: white;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      h2 {
+      font-weight: 100;
+      font-size: 15px;
+      transition: 300ms;
+        &:hover {
+          color: rgb(12, 58, 174);
+        }
+      }
+    }
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.swiper-rtl .swiper-button-next:after {
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+}
+.swiper-rtl .swiper-button-prev:after {
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+}

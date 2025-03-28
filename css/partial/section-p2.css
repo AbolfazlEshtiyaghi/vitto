@@ -1,0 +1,9 @@
+@font-face {
+    font-family: shabnam;
+    src: url(../font/Shabnam-Medium-FD.woff);
+}
+.section-p2{
+width: 75%;
+height: 80vh;
+background-color: rgb(31, 31, 31);
+}

@@ -1,0 +1,329 @@
+@font-face {
+  font-family: shabnam;
+  src: url(../font/Shabnam-Medium-FD.woff);
+}
+.b-t {
+  width: 100%;
+  height: 500px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: start;
+  align-items: center;
+  font-family: shabnam;
+
+  .titlee {
+    width: 100%;
+    height: 90px;
+    background-color: whitesmoke;
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 70px;
+
+    .t1 {
+      width: 20%;
+      height: inherit;
+      background-color: rgb(213, 210, 210);
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      h2 {
+        transform: rotateY(200deg);
+        margin-right: 20px;
+        margin-right: 140px;
+        color: gray;
+      }
+      h3 {
+        font-size: 17px;
+        color: gray;
+        font-weight: 100;
+        color: gray;
+      }
+    }
+    .t2 {
+      width: 37%;
+      height: inherit;
+      background-color: rgb(213, 210, 210);
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      color: gray;
+      h2 {
+        font-size: 15px;
+      }
+      h3 {
+        font-size: 15px;
+        font-weight: 100;
+      }
+    }
+    .t3 {
+      width: 30%;
+      height: inherit;
+      background-color: rgb(213, 210, 210);
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      h2 {
+        font-size: 15px;
+        color: gray;
+      }
+      h3 {
+        font-size: 15px;
+        font-weight: 100;
+        color: gray;
+      }
+    }
+    .j-btn {
+      width: 13%;
+      height: inherit;
+      background-color: rgb(213, 210, 210);
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: start;
+      align-items: center;
+      button {
+        width: 100px;
+        height: 50px;
+        background-color: rgb(222, 220, 220);
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        color: gray;
+        font-family: shabnam;
+        margin-right: 20px;
+        border-radius: 10px;
+        font-size: 12px;
+        border: none;
+        gap: 45px;
+        transition: 300ms;
+        box-shadow:0px 0px 5px;
+        &:hover {
+          color: black;
+        }
+        &:hover a {
+          color: black;
+          transition: 300ms;
+        }
+        &:active {
+          transform: scale(0.9);
+        }
+        a {
+          text-decoration: none;
+          font-size: 13px;
+          color: gray;
+        }
+      }
+    }
+  }
+  .titlee2 {
+    width: 100%;
+    height: 295px;
+    background-color: gray;
+    display: flex;
+    flex-flow: row wrap;
+    
+    .p1 {
+      width: 25%;
+      height: inherit;
+      background-color: whitesmoke;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: end;
+      gap: 20px;
+      img{
+        width: 45%;
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+      .p{
+        width: 40%;
+        height: 40px;
+        background-color: whitesmoke;
+        display: flex;
+        flex-flow: row;
+       justify-content: center;
+       align-items: center;
+       margin-left: 30px;
+        h2{
+          width: 100%;
+          font-size: 15px;
+        }
+        .im{
+          width: 15%;
+          height: 60%;
+          font-size: 10px;
+          margin-left: 10px;
+          margin-bottom: 20px;
+          opacity: 2;
+        }
+      }
+    }
+    .p2{
+      width: 43%;
+      height: inherit;
+      background-color: cornflowerblue;
+      .b-h2{
+        width: 100%;
+        height: 50px;
+        background-color: whitesmoke;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: start;
+      h2{
+        margin-right: 15px;
+        font-size: 20px;
+      }
+      }
+      .p-pa{
+        width: 100%;
+        height: 85%;
+        background-color: whitesmoke;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        color: gray;
+        line-height: 32px;
+       h4{
+        font-weight: 100;
+       } 
+      }
+    }
+    .p3{
+      width: 11%;
+      height: inherit;
+      background-color: whitesmoke;
+      display: flex;
+      flex-flow: column wrap;
+      .t1{
+        width: 100%;
+        height: 50px;
+        background-color: whitesmoke;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: start;
+        margin-right: 0px;
+        h2{
+          font-size: 20px;
+          margin-right: 20px;
+        }
+      }
+.t2{
+  width: 100%;
+  height: 80%;
+  background-color: whitesmoke;
+  font-size: 10px;
+  font-weight: 100;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  color: gray;
+
+ h2{
+  width: 100%;
+  height: 35px;
+  font-weight: 100;
+  margin-right: 5px;
+  transition: 300ms;
+  &:hover{
+    color: black;
+  }
+ }
+  .h{
+    background-color: whitesmoke;
+    gap: 10px;
+    margin-right: 5px;
+    transition: 300ms;
+    &:hover{
+      color: black;
+    }
+  }
+  .hh{
+    background-color: whitesmoke;
+    gap: 10px;
+    font-weight: 100;
+    margin-right: 5px;
+    transition: 300ms;
+    &:hover{
+      color: black;
+    }
+  }
+  .hhh{
+    background-color: whitesmoke;
+    gap: 10px;
+    font-weight: 100;
+    margin-right: 5px;
+    transition: 300ms;
+    &:hover{
+      color: black;
+    }
+  }
+  .hhhh{
+    background-color: whitesmoke;
+    gap: 10px;
+    font-weight: 100;
+    margin-right: 5px;
+    transition: 300ms;
+    &:hover{
+      color: black;
+    }
+  }
+  .hhhhh{
+    background-color: whitesmoke;
+    gap: 10px;
+    font-weight: 100;
+    margin-right: 5px;
+    transition: 300ms;
+    &:hover{
+      color: black;
+    }
+  }
+}
+    }
+    .p4{
+      width: 21%;
+      height: inherit;
+      background-color: whitesmoke;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: start;
+ 
+      .img{
+        width: 200px;
+        height: 180px;
+        background-color: whitesmoke;
+        margin-right: 20px;
+        border-radius: 8px;
+        transition: 600ms;
+        
+
+      } 
+    }
+  }
+  .title-footer {
+    width: 100%;
+    height: 45px;
+    background-color: rgb(27, 90, 177);
+    display: flex;
+flex-flow: column wrap;
+justify-content: center;
+align-items: center;
+color: whitesmoke;
+font-size: 12px;
+font-weight: 100;
+  }
+}

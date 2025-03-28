@@ -1,0 +1,531 @@
+    @font-face {
+        font-family: shabnam;
+        src: url(../font/Shabnam-Medium-FD.woff);
+    }
+.background-section{
+    width: 100%;
+    height: 92vh;
+    background-color: whitesmoke;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+   
+   .parents{
+    width: 74%;
+    height: 95%;
+    background-color: rgb(215, 215, 215);
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: shabnam;
+    column-gap: 25px;
+    
+    .titile{
+        width: 95%;
+        height: 85px;
+        background-color: rgb(215, 215, 215);
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 600px;
+        color: gray;
+        h2{
+            font-size: 35px;
+            margin-top: 20px;
+            i{
+                color: orangered;
+                font-size: 35px;
+                margin-top: 10px;
+            }
+        }
+        h3{
+            font-size: 25px;
+            font-weight: 100;
+            margin-top: 40px;
+        }
+    }
+    .child-3-1{
+width: 27%;
+height: 80%;
+background-color: white;
+margin-top: 20px;
+display: flex;
+flex-flow: column wrap;
+justify-content: space-around;
+align-items: center;
+border-radius: 15px;
+transition: 300ms;
+margin-right: 40px;
+margin-bottom: 60px;
+&:hover{
+    box-shadow: 0px 0px 6px;
+    color: gray;
+   
+}
+.img{
+width: 100%;
+height: 280px;
+margin-left: 20px;
+margin-bottom: 50px;
+border-radius: 15px;
+background-color: white;
+display: flex;
+flex-flow: row;
+justify-content: center;
+align-items: center;
+img{
+    width: 100%;
+    height: 280px;
+   
+}
+}
+.h2{
+    width: 100%;
+    height: 80px;
+    font-size: 10px;
+    margin-left: 20px;
+    background-color: white;
+    box-sizing: border-box;
+    font-weight: 100;
+    color: rgb(27, 27, 27);
+    h2{
+        font-weight: 100;
+        font-size: 17px;
+        margin-right: 20px;
+    }
+}
+.h3{
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    margin-left: 20px;
+    
+    h3{
+        color: gray;
+        margin-right:10px ;
+        text-decoration: line-through;
+        font-size: 15px;
+    }
+    h4{
+font-size: 13px;
+color: orangered;
+
+    }
+    
+}
+a{
+    width:100%;
+    height: 30px;
+    margin-right: 200px;
+    text-decoration: none;
+    color: black;
+}
+.span{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    a{
+        width: 16%;
+        height: fit-content;
+        margin-right: 200px;
+        color: navy;
+        font-size: 20px;
+        
+    }
+    h5{
+        font-size: 13px;
+        color: rgb(82, 81, 81);
+        
+    }
+}
+
+    }
+    .child-3-2{
+width: 27%;
+height: 80%;
+background-color: white;
+margin-top: 20px;
+border-radius: 10px;
+display: flex;
+flex-flow: column wrap;
+justify-content: space-around;
+align-items: center;
+border-radius: 15px;
+transition: 300ms;
+padding: 1px;
+box-sizing: border-box;
+margin-bottom: 60px;
+&:hover{
+    box-shadow: 0px 0px 6px;
+}
+.img{
+    width: 100%;
+    height: 300px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+     img{
+    width: 100%;
+    height: 300px;
+     }
+    
+}
+.h2{
+    width: 100%;
+    height: 80px;
+    font-size: 12px;
+    margin-left: 20px;
+    background-color: white;
+    box-sizing: border-box;
+    display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: start;
+     font-weight: 100;
+    h2{
+        font-weight: 100;
+        font-size: 17px;
+        margin-right: 10px;
+
+    }
+ }
+ .h3{
+width: 100%;
+height: 40px;
+background-color: white;
+display: flex;
+flex-flow: row ;
+justify-content: center;
+align-items: center;
+gap: 150px;
+margin-left: 20px;
+h3{
+    color: gray;
+    margin-right:10px ;
+    text-decoration: line-through;
+    font-size: 15px;
+}
+h4{
+    font-size: 13px;
+    color: orangered;
+        }
+ }
+ a{
+    width: 100%;
+    height: 30px;
+    margin-right: 200px;
+    text-decoration: none;
+    color: navy;
+    font-size:20px ;
+    gap: 20px;
+ }
+ .span{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    a{
+        width: 16%;
+        height: fit-content;
+        margin-right: 200px;
+       
+    }
+    h5{
+        font-size: 13px;
+        color: rgb(82, 81, 81);
+    }
+ }
+ 
+    }
+    .child-3-3{
+width: 35%;
+height: 85%;
+display: flex;
+flex-flow: column wrap;
+justify-content: center;
+align-items: start;
+row-gap: 25px;
+.subchild-1-3{
+    width: 400px;
+    height: 28%;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: start;
+    transition: 300ms;
+    
+    &:hover{
+        box-shadow: 0px 0px 6px;
+    }
+    .img{
+        width: 40%;
+        height: 160px;
+        background-color: white;
+        display: flex;
+        flex-flow: row ;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+    }
+    .h2{
+        width: 60%;
+        height: 40%;
+        background-color: white;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        h2{
+            font-size: 15px;
+            margin-right: 10px;
+            margin-top: 10px;
+            font-weight: 100;
+        }
+    }
+    .h3{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+      background-color: white;
+      gap: 10px;
+      h3{
+        font-size: 13px;
+        color: orangered ;
+        margin-right: 20px;
+      }
+      a{
+        text-decoration: line-through;
+        color: gray;
+      }
+    }
+    .h4{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: end;
+        align-items: center;
+        background-color: white;
+        gap: 6px;
+        margin-top: 10px;
+        
+        a{
+            margin-left: 5px;
+            color: gray;
+            text-decoration: none;
+            font-size: 13px;
+        }
+        h4{
+            color: navy;
+            font-size: 20px;
+        }
+    }
+}
+.subchild-2-3{
+    width: 400px;
+    height: 28%;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: start;
+    transition: 300ms;
+    &:hover{
+        box-shadow: 0px 0px 6px;
+    }
+    .img{
+        width: 40%;
+        height: 160px;
+        background-color: white;
+        display: flex;
+        flex-flow: row ;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 100%;
+            height: 80%;
+            border-radius: 10px;
+        }
+    }
+    }
+    .h2{
+        width: 60%;
+        height: 40%;
+        background-color: white;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        h2{
+            font-size: 15px;
+            margin-right: 10px;
+            margin-top: 10px;
+            font-weight: 100;
+        }
+    }
+    .h3{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+      background-color: white;
+      gap: 10px;
+      h3{
+        font-size: 13px;
+        color: orangered ;
+        margin-right: 20px;
+      }
+      a{
+        text-decoration: line-through;
+        color: gray;
+      }
+    }
+    .h4{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: end;
+        align-items: center;
+        background-color: white;
+        gap: 6px;
+        margin-top: 10px;
+        
+        a{
+            margin-left: 5px;
+            color: gray;
+            text-decoration: none;
+            font-size: 13px;
+        }
+        h4{
+            color: navy;
+            font-size: 20px;
+        }
+    }
+}
+.subchild-3-3{
+    width: 400px;
+    height: 28%;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: start;
+    transition: 300ms;
+    margin-bottom: 30px;
+    &:hover{
+        box-shadow: 0px 0px 6px;
+    }
+    .img{
+        width: 40%;
+        height: 160px;
+        background-color: white;
+        display: flex;
+        flex-flow: row ;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 100%;
+            height: 80%;
+            border-radius: 10px;
+        }
+    }
+    .h2{
+        width: 60%;
+        height: 40%;
+        background-color: white;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        h2{
+            font-size: 15px;
+            margin-right: 15px;
+            margin-top: 10px;
+            font-weight: 100;
+        }
+    }
+    .h3{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+      background-color: white;
+      gap: 10px;
+      h3{
+        font-size: 13px;
+        color: orangered ;
+        margin-right: 20px;
+      }
+      a{
+        text-decoration: line-through;
+        color: gray;
+      }
+    }
+    .h4{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: end;
+        align-items: center;
+        background-color: white;
+        gap: 6px;
+        margin-top: 10px;
+        
+        a{
+            margin-left: 5px;
+            color: gray;
+            text-decoration: none;
+            font-size: 13px;
+        }
+        h4{
+            color: navy;
+            font-size: 20px;
+        }
+    }
+}
+    }
+   }
