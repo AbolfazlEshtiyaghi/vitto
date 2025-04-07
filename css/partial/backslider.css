@@ -2,9 +2,9 @@
     font-family: shabnam;
     src: url(../font/Shabnam-Medium-FD.woff);
 }
-.backslider{
+.backslider1{
     width: 100%;
-    height: 350px;
+    height: 390px;
     background-color: whitesmoke;
     font-family: shabnam;
     display: flex;
